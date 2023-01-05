@@ -75,7 +75,7 @@ With the state diagram above, we can construct the following truth table:
 #### Karnaugh Maps
 
 We can then construct these 5 following Karnaugh Maps ( for s0,s1,o0,o1,o2), alongside its
-equations from the truth table above:
+combinatorial boolean equations from the truth table above:
 
 ##### Next state s0 Kmap
 AB = s0s1 , CD = ud
