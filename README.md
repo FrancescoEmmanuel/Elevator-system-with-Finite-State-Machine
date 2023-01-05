@@ -1,4 +1,4 @@
-# Two floor elevator system finite state machine
+# Two floor elevator system Finite State Machine
 In this repository, you can find a Finite State Machine for a two floor elevator system that I have made,
 written in C.
 
@@ -69,7 +69,7 @@ s1 = door (opened/closed)
 
 #### Truth table
 With the state diagram above, we can construct the following truth table:
-<br>
+<br><br>
 ![Truth Table](https://github.com/FrancescoEmmanuel/Elevator-system-with-Finite-State-Machine/blob/main/Truth%20table.JPG)
 
 #### Karnaugh Maps
@@ -82,21 +82,24 @@ AB = s0s1 , CD = ud
 
 ![s0 Kmap](https://github.com/FrancescoEmmanuel/Elevator-system-with-Finite-State-Machine/blob/main/Next%20state%20s0%20kmap.JPG)
 <br>
-Equation: s0= s0s1’ + s0u + s0d’ +s1ud’
+Equation:<br>
+ s0 = s0s1’ + s0u + s0d’ +s1ud’
 
 ##### Next state s1 Kmap
 AB = s0s1 , CD = ud
 
 ![s1 Kmap](https://github.com/FrancescoEmmanuel/Elevator-system-with-Finite-State-Machine/blob/main/Next%20state%20s1%20kmap.jpg)
 <br>
-Equation: s1d + s1u + s0’ud’ + s0u’d
+Equation:<br>
+s1 = s1d + s1u + s0’ud’ + s0u’d
 
 ##### o0 Kmap
 AB= s0s1 , CD=ud
 
 ![o0 Kmap](https://github.com/FrancescoEmmanuel/Elevator-system-with-Finite-State-Machine/blob/main/o0%20kmap.JPG)
 <br>
-Equation: s0'
+Equation:<br>
+o0 = s0'
 
 
 ##### o1 Kmap
@@ -104,14 +107,16 @@ AB= s0s1 , CD=ud
 
 ![o1 Kmap](https://github.com/FrancescoEmmanuel/Elevator-system-with-Finite-State-Machine/blob/main/o1%20kmap.JPG)
 <br>
-Equation: s0
+Equation:<br>
+o1 = s0
 
 ##### o2 Kmap
 AB= s0s1 , CD=ud
 
 ![o2 Kmap](https://github.com/FrancescoEmmanuel/Elevator-system-with-Finite-State-Machine/blob/main/o2%20kmap.JPG)
 <br>
-Equation: s1
+Equation:<br>
+o2 = s1
 
 ## Implementing this FSM on C
 In this section, I will be showing you how to run this FSM on C language.
