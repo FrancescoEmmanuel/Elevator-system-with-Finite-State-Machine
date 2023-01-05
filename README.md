@@ -53,7 +53,54 @@ When the up button, none of the buttons, or both of the buttons are pushed - the
 
 ### Visualization of the FSM
 
-The following diagram is a visualization of this FSM:
+#### State diagram
+The following state diagram is a visualization of this FSM:
 
+![FSM Diagram](https://github.com/FrancescoEmmanuel/Elevator-system-with-Finite-State-Machine/blob/main/FSM%20Diagram.JPG)
+
+#### Truth table
+With the state diagram above, we can construct the following truth table:
+
+
+#### Karnaugh Maps
+
+We can then construct these 5 following Karnaugh Maps ( for s0,s1,o0,o1,o2), alongside its
+equations from the truth table above:
+
+##### Next state s0 Kmap
+AB = s0s1   CD = ud
+
+![s0 Kmap]()
+<br>
+Equation: s0= s0s1’ + s0u + s0d’ +s1ud’
+
+##### Next state s1 Kmap
+AB = s0s1 CD = ud
+
+![s1 Kmap]()
+<br>
+Equation: s1d + s1u + s0’ud’ + s0u’d
+
+##### o0 Kmap
+AB= s0s1 CD=ud
+
+![o0 Kmap]()
+<br>
+Equation: s0'
+
+
+##### o1 Kmap
+AB= s0s1 CD=ud
+
+![o1 Kmap]()
+<br>
+Equation: s0
+
+##### o2 Kmap
+AB= s0s1 CD=ud
+
+![o2 Kmap]()
+<br>
+Equation: s1
 
 
